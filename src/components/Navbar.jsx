@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-18 max-w-[1240px] mx-auto px-16 pb-2 text-white shadow-lg">
+    <div className="sticky top-0 z-50 flex w-full justify-between items-center h-18  mx-auto px-16 pb-2 text-white shadow-lg">
       <img src={logoN} alt="Logo" className="h-12 pt-2" /> 
 
       <ul className="hidden md:flex">
@@ -33,7 +33,7 @@ const Navbar = () => {
         className={
           nav
             ? "fixed left-0 top-0 w-[40%] h-full border-r border-r-gray-900 bg-[#F7EED3] ease-in-out duration-500"
-            : "fixed left-[-100%] top-0 h-full "
+            : "fixed left-[-100%] top-0 h-full ease-in-out duration-500 "
         }
       >
         <h1 className="text-3xl font-bold text-[#EECAD5] m-6">Happy Reading!</h1>
